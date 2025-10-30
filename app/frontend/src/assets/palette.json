@@ -1,0 +1,226 @@
+{
+  "mode": "dark",
+  "primary": {
+      "main": "#53DDAB",
+      "contrastText": "#003827"
+  },
+  "onPrimary": {
+      "main": "#003827",
+      "contrastText": "#53DDAB"
+  },
+  "primaryContainer": {
+      "main": "#15B586",
+      "contrastText": "#003F2C"
+  },
+  "onPrimaryContainer": {
+      "main": "#003F2C",
+      "contrastText": "#15B586"
+  },
+  "secondary": {
+      "main": "#FFB1C3",
+      "contrastText": "#66002D"
+  },
+  "onSecondary": {
+      "main": "#66002D",
+      "contrastText": "#FFB1C3"
+  },
+  "secondaryContainer": {
+      "main": "#EB618C",
+      "contrastText": "#350014"
+  },
+  "onSecondaryContainer": {
+      "main": "#350014",
+      "contrastText": "#EB618C"
+  },
+  "tertiary": {
+      "main": "#FFB68B",
+      "contrastText": "#522300"
+  },
+  "onTertiary": {
+      "main": "#522300",
+      "contrastText": "#FFB68B"
+  },
+  "tertiaryContainer": {
+      "main": "#EF7E2E",
+      "contrastText": "#582600"
+  },
+  "onTertiaryContainer": {
+      "main": "#582600",
+      "contrastText": "#EF7E2E"
+  },
+  "error": {
+      "main": "#FFB4AB",
+      "contrastText": "#690005"
+  },
+  "onError": {
+      "main": "#690005",
+      "contrastText": "#FFB4AB"
+  },
+  "errorContainer": {
+      "main": "#93000A",
+      "contrastText": "#FFDAD6"
+  },
+  "onErrorContainer": {
+      "main": "#FFDAD6",
+      "contrastText": "#93000A"
+  },
+  "primaryFixed": {
+      "main": "#73FAC6"
+  },
+  "primaryFixedDim": {
+      "main": "#53DDAB"
+  },
+  "onPrimaryFixed": {
+      "main": "#002115"
+  },
+  "onPrimaryFixedVariant": {
+      "main": "#00513A"
+  },
+  "secondaryFixed": {
+      "main": "#FFD9E0"
+  },
+  "secondaryFixedDim": {
+      "main": "#FFB1C3"
+  },
+  "onSecondaryFixed": {
+      "main": "#3F0019"
+  },
+  "onSecondaryFixedVariant": {
+      "main": "#8A1243"
+  },
+  "tertiaryFixed": {
+      "main": "#FFDBC8"
+  },
+  "tertiaryFixedDim": {
+      "main": "#FFB68B"
+  },
+  "onTertiaryFixed": {
+      "main": "#321200"
+  },
+  "onTertiaryFixedVariant": {
+      "main": "#753400"
+  },
+  "surface": {
+      "main": "#131313",
+      "contrastText": "#E2E2E2"
+  },
+  "onSurface": {
+      "main": "#E2E2E2",
+      "contrastText": "#131313"
+  },
+  "surfaceDim": {
+      "main": "#131313"
+  },
+  "surfaceBright": {
+      "main": "#393939"
+  },
+  "surfaceContainerLowest": {
+      "main": "#0E0E0E"
+  },
+  "surfaceContainerLow": {
+      "main": "#1B1B1B"
+  },
+  "surfaceContainer": {
+      "main": "#1F1F1F"
+  },
+  "surfaceContainerHigh": {
+      "main": "#2A2A2A"
+  },
+  "surfaceContainerHighest": {
+      "main": "#353535"
+  },
+  "surfaceVariant": {
+      "main": "#444748",
+      "contrastText": "#C4C7C8"
+  },
+  "onSurfaceVariant": {
+      "main": "#C4C7C8",
+      "contrastText": "#444748"
+  },
+  "outline": {
+      "main": "#8E9192"
+  },
+  "outlineVariant": {
+      "main": "#444748"
+  },
+  "inversePrimary": {
+      "main": "#006C4E"
+  },
+  "inverseSurface": {
+      "main": "#E2E2E2",
+      "contrastText": "#E2E2E2"
+  },
+  "inverseOnSurface": {
+      "main": "#303030",
+      "contrastText": "#E2E2E2"
+  },
+  "shadow": {
+      "main": "#000000"
+  },
+  "scrim": {
+      "main": "#000000"
+  },
+  "surfaceTint": {
+      "main": "#53DDAB"
+  },
+  "background": {
+      "default": "#000000",
+      "paper": "#131313"
+  },
+  "onBackground": {
+      "main": "#DDE4DE"
+  },
+  "text": {
+      "primary": "#E2E2E2",
+      "secondary": "#C4C7C8"
+  },
+  "info": {
+      "main": "#96ccff",
+      "contrastText": "#003353"
+  },
+  "onInfo": {
+      "main": "#003353",
+      "contrastText": "#96ccff"
+  },
+  "infoContainer": {
+      "main": "#004a75",
+      "contrastText": "#cee5ff"
+  },
+  "onInfoContainer": {
+      "main": "#cee5ff",
+      "contrastText": "#004a75"
+  },
+  "success": {
+      "main": "#88d982",
+      "contrastText": "#003909"
+  },
+  "onSuccess": {
+      "main": "#003909",
+      "contrastText": "#88d982"
+  },
+  "successContainer": {
+      "main": "#005312",
+      "contrastText": "#a3f69c"
+  },
+  "onSuccessContainer": {
+      "main": "#a3f69c",
+      "contrastText": "#005312"
+  },
+  "warning": {
+      "main": "#ffb68e",
+      "contrastText": "#542200"
+  },
+  "onWarning": {
+      "main": "#542200",
+      "contrastText": "#ffb68e"
+  },
+  "warningContainer": {
+      "main": "#773300",
+      "contrastText": "#ffdbca"
+  },
+  "onWarningContainer": {
+      "main": "#ffdbca",
+      "contrastText": "#773300"
+  },
+  "divider": "#8E9192"
+}

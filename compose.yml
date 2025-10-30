@@ -1,0 +1,45 @@
+services:
+  frontend:
+    image: node:22-slim
+    env_file:
+      - .env/frontend.env
+    environment:
+      OSTYPE: $OSTYPE
+    user: ${DOCKER_OWNER}:${DOCKER_GROUP}
+    volumes:
+      - ./app/frontend:/app
+      - ${DOCKER_HOME}:/home/node
+    ports:
+      - 3000:3000
+    working_dir: /app
+    command: npm run dev
+  preview:
+    profiles: [ "preview" ]
+    image: node:22-slim
+    environment:
+      OSTYPE: $OSTYPE
+    user: ${DOCKER_OWNER}:${DOCKER_GROUP}
+    volumes:
+      - ./app/frontend:/app
+      - ${DOCKER_HOME}:/home/node
+    ports:
+      - 5000:5000
+    working_dir: /app
+    command: npm run preview
+
+  build:
+    profiles: [ "build" ]
+    build:
+      context: .
+      dockerfile: docker/development/frontend/Dockerfile
+    env_file:
+      - .env/frontend.env
+    environment:
+      NODE_ENV: production
+      OSTYPE: $OSTYPE
+    user: ${DOCKER_OWNER}:${DOCKER_GROUP}
+    volumes:
+      - ./app/frontend:/app
+      - ${DOCKER_HOME}:/home/node
+    working_dir: /app
+    command: sh -c 'npm run build && [ "$DEPLOY" = "true" ] && npm run deploy'
