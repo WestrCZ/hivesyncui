@@ -1,6 +1,6 @@
 services:
   frontend:
-    image: node:22-slim
+    image: node:24-slim
     env_file:
       - .env/frontend.env
     environment:
@@ -15,7 +15,7 @@ services:
     command: npm run dev
   preview:
     profiles: [ "preview" ]
-    image: node:22-slim
+    image: node:24-slim
     environment:
       OSTYPE: $OSTYPE
     user: ${DOCKER_OWNER}:${DOCKER_GROUP}
@@ -29,9 +29,7 @@ services:
 
   build:
     profiles: [ "build" ]
-    build:
-      context: .
-      dockerfile: docker/development/frontend/Dockerfile
+    image: node:24-slim
     env_file:
       - .env/frontend.env
     environment:
@@ -42,4 +40,4 @@ services:
       - ./app/frontend:/app
       - ${DOCKER_HOME}:/home/node
     working_dir: /app
-    command: sh -c 'npm run build && [ "$DEPLOY" = "true" ] && npm run deploy'
+    command: npm run build

@@ -1,18 +1,15 @@
 {
-  "name": "kultikino",
+  "name": "hivesync",
   "private": true,
   "version": "0.0.1",
-  "description": "Web app for the presentation of a cultural event based in Železný Brod",
+  "description": "Web application for HiveSinc.",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build --mode production",
-    "postbuild": "staticit --disable-prettier",
     "test": "tsc --noEmit && eslint .",
     "fix": "eslint --fix .",
-    "preview": "vite preview",
-    "predeploy": "rm -rf node_modules/.cache/gh-pages",
-    "deploy": "gh-pages -d dist -b main -r https://$GITHUB_TOKEN@github.com/Kultikino/kultikino.github.io.git"
+    "preview": "vite preview"
   },
   "browserslist": {
     "production": [
