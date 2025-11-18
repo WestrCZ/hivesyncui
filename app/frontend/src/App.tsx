@@ -3,20 +3,16 @@ import {
   ThemeProvider,
 } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
-import Routes from "./routes/Routes";
+import ReactRoutes from "./Routes";
 
-import "@fontsource/inter/300.css";
-import "@fontsource/inter/400.css";
-import "@fontsource/inter/500.css";
-import "@fontsource/inter/700.css";
-import themeWithComponents from "./theme";
+import theme from "./theme";
 
 function App() {
   return (
-    <ThemeProvider theme={themeWithComponents}>
+    <ThemeProvider theme={theme}>
       <CssBaseline>
         <BrowserRouter>
-          <Routes />
+          <ReactRoutes />
         </BrowserRouter>
       </CssBaseline>
     </ThemeProvider>

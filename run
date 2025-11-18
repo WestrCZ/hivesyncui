@@ -32,6 +32,10 @@ install() {
 	echo -e "\nALL OK"
 }
 
+generate() {
+	compose up generate
+}
+
 fix() {
 	compose run --rm --no-deps frontend npm run fix && \
 	echo -e "\nALL OK"
@@ -43,7 +47,8 @@ test() {
 }
 
 build() {
-  compose up build
+	compose run --rm --no-deps frontend npm run build && \
+	echo -e "\nALL OK"
 }
 
 dev() {
@@ -52,10 +57,6 @@ dev() {
 
 preview() {
   compose up preview
-}
-
-deploy() {
-  DEPLOY=true build
 }
 
 "$@"

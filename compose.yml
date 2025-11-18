@@ -26,18 +26,18 @@ services:
       - 5000:5000
     working_dir: /app
     command: npm run preview
-
-  build:
-    profiles: [ "build" ]
-    image: node:24-slim
+  generate:
+    profiles: [ "generate" ]
+    build:
+      context: .
+      dockerfile: docker/frontend/Dockerfile
     env_file:
       - .env/frontend.env
     environment:
-      NODE_ENV: production
       OSTYPE: $OSTYPE
     user: ${DOCKER_OWNER}:${DOCKER_GROUP}
     volumes:
       - ./app/frontend:/app
       - ${DOCKER_HOME}:/home/node
     working_dir: /app
-    command: npm run build
+    command: npm run generate
