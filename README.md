@@ -15,3 +15,5 @@ https://vitejs.dev
 ### React Router
 
 ### Zustand
+
+### openapi-generator
