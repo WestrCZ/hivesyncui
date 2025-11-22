@@ -6,16 +6,19 @@ import { CssBaseline } from "@mui/material";
 import ReactRoutes from "./Routes";
 
 import theme from "./theme";
+import ApiContextProvider from "./context/api/ApiContextProvider";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline>
-        <BrowserRouter>
-          <ReactRoutes />
-        </BrowserRouter>
-      </CssBaseline>
-    </ThemeProvider>
+    <ApiContextProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline>
+          <BrowserRouter>
+            <ReactRoutes />
+          </BrowserRouter>
+        </CssBaseline>
+      </ThemeProvider>
+    </ApiContextProvider>
   );
 }
 
